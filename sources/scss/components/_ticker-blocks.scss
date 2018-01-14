@@ -1,0 +1,17 @@
+/**
+ * @Component Name: Ticker Block
+ * @Component Description: A block consisteing of snapshot data + line graph
+ * @Dependencies: None
+ * @Author: NM Peters
+ */
+
+.ticker-block{
+  flex: 1;
+  background-color: $blue-lobelia;
+  padding: $uniformed-margin;
+  margin-bottom: $uniformed-margin;
+
+  &--inline{
+
+  }
+}

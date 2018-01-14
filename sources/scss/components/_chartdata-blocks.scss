@@ -1,0 +1,15 @@
+/**
+ * @Component Name: Chart Data Blocks
+ * @Component Description: Family of blocks that will contain chart or graph data
+ * @Dependencies:
+ * @Author: NM Peters
+ */
+
+.chartdata{
+  background-color: $blue-lobelia;
+
+  &__title{
+    background-color: #1F2940;
+    padding: $uniformed-margin;
+  }
+}

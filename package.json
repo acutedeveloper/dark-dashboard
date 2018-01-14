@@ -1,0 +1,18 @@
+{
+  "name": "sports-hub-page",
+  "version": "1.0.0",
+  "description": "Setup for the new C.org news hub pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nigel M Peters @acutedeveloper",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-autoprefixer": "*",
+    "browser-sync": "*"
+  }
+}

@@ -1,0 +1,59 @@
+body{
+  font-family: arial;
+}
+
+.row {
+
+}
+
+.container {
+  max-width: 1160px;
+  margin: auto;
+}
+
+.swatches {
+  display: flex;
+  flex-flow: wrap;
+  width: calc(100% + 10px);
+  margin: 0 0 0 -5px;
+}
+
+.swatches__block {
+  flex: 1 0 25%;
+  margin: 5px;
+  border: 1px solid #EFEFEF;
+}
+
+.swatches__color {
+  height: 250px;
+  background-color: #FFFFFF;
+}
+
+.swatched__colorname {
+  padding: 10px;
+}
+
+.hei-se-black {
+	background-color: $hei-se-black;
+}
+
+.blue-lobelia {
+	background-color: $blue-lobelia;
+}
+
+.tomato-red {
+	background-color: $tomato-red;
+}
+
+.vermilion {
+	background-color: $vermilion;
+}
+
+.mediterranean-sea {
+	background-color: $mediterranean-sea;
+}
+
+.aquarium-diver {
+	background-color: $aquarium-diver;
+}
+

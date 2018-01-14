@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <title>Style Sheet Document</title>
+</head>
+<body>
+    <div class="row">
+	    <div class="container">
+	        <div class="swatches"></div>
+	    </div>
+	</div>
+
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/colors-object.js"></script>
+    <script>
+		$(document).ready(function(){
+
+			for(i = 0; i < colorsObject.length; i++){
+
+			    var colorClassName = colorsObject[i].name.replace(/\s/g, '-').toLowerCase();
+
+				var $swatchBlock = $('<div class="swatches__block"><div class="swatches__color"></div><div class="swatches__colorname">');
+
+                $swatchBlock.find('.swatches__color').addClass(colorClassName);
+                $swatchBlock.find('.swatches__colorname').append('<h3>' + colorsObject[i].name + '</h3><p>' + colorsObject[i].hex + '</p>');
+
+				$('.swatches').append($swatchBlock);
+			}
+
+        });
+    </script>
+</body>
+</html>

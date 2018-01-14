@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  background: #151D31;
+  font-family: "Montserrat",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #fff; }
+
+body {
+  font-family: arial; }
+
+.container {
+  max-width: 1160px;
+  margin: auto; }
+
+.swatches {
+  display: flex;
+  flex-flow: wrap;
+  width: calc(100% + 10px);
+  margin: 0 0 0 -5px; }
+
+.swatches__block {
+  flex: 1 0 25%;
+  margin: 5px;
+  border: 1px solid #EFEFEF; }
+
+.swatches__color {
+  height: 250px;
+  background-color: #FFFFFF; }
+
+.swatched__colorname {
+  padding: 10px; }
+
+.hei-se-black {
+  background-color: #151D31; }
+
+.blue-lobelia {
+  background-color: #25314B; }
+
+.tomato-red {
+  background-color: #E12E00; }
+
+.vermilion {
+  background-color: #E3390D; }
+
+.mediterranean-sea {
+  background-color: #118DA9; }
+
+.aquarium-diver {
+  background-color: #1197B3; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.2; }
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 1.2; }
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.2; }
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.2; }
+
+h5 {
+  font-size: .8125rem;
+  line-height: 1.2; }
+
+h6 {
+  font-size: .8125rem;
+  line-height: 1.2; }
+
+p {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.2; }
+
+strong {
+  font-weight: 400; }
+
+body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column; }
+
+.top-row {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch; }
+
+.bottom-row {
+  display: flex;
+  width: calc(100% + $uniformed-margin);
+  margin: 0 0 -10px; }
+
+.bottom-row__column {
+  flex: 1 1 auto;
+  margin: 10px; }
+
+.ticker-block {
+  flex: 1;
+  background-color: #25314B;
+  padding: 20px;
+  margin-bottom: 20px; }
+
+.chartdata {
+  background-color: #25314B; }
+
+.chartdata__title {
+  background-color: #1F2940;
+  padding: 20px; }
+
+/*# sourceMappingURL=base.css.map */

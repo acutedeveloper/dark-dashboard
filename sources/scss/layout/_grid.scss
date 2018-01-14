@@ -1,0 +1,29 @@
+/**
+ * @Component Name: Grid layout
+ * @Component Description: Provides the structure by which the components sit
+ * @Dependencies: None
+ * @Author: NM Peters
+ */
+
+body{
+  padding: $uniformed-margin;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-row{
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.bottom-row{
+  display: flex;
+  width: calc(100% + $uniformed-margin);
+  margin: 0 0 0 -$uniformed-margin/2;
+
+  &__column{
+    flex: 1 1 auto;
+    margin: $uniformed-margin/2;
+  }
+}
