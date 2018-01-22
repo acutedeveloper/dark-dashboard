@@ -19,8 +19,8 @@ body{
 
 .bottom-row{
   display: flex;
-  width: calc(100% + $uniformed-margin);
-  margin: 0 0 0 -$uniformed-margin/2;
+  width: calc(100% + #{$uniformed-margin});
+  margin: 0 0 0 -#{$uniformed-margin/2};
 
   &__column{
     flex: 1 1 auto;

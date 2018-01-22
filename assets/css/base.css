@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -37,13 +38,10 @@ html {
   font-family: "Montserrat",Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
+  font-size: 88.88889%;
+  -webkit-text-size-adjust: 88.88889%;
   line-height: 1.5;
   color: #fff; }
-
-body {
-  font-family: arial; }
 
 .container {
   max-width: 1160px;
@@ -116,7 +114,7 @@ h6 {
 
 p {
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.2; }
 
 strong {
@@ -134,8 +132,8 @@ body {
 
 .bottom-row {
   display: flex;
-  width: calc(100% + $uniformed-margin);
-  margin: 0 0 -10px; }
+  width: calc(100% + 20px);
+  margin: 0 0 0 -10px; }
 
 .bottom-row__column {
   flex: 1 1 auto;
@@ -145,13 +143,35 @@ body {
   flex: 1;
   background-color: #25314B;
   padding: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-radius: 5px; }
+
+.ticker-block__data-title {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5); }
+
+.ticker-block--inline {
+  border-radius: 0; }
+
+.ticker-block--inline:first-child {
+  border-radius: 5px 0 0 5px; }
+
+.ticker-block--inline:last-child {
+  border-radius: 0 5px 5px 0; }
+
+.ticker-block--red {
+  border-left: 6px solid #E12E00; }
+
+.ticker-block--blue {
+  border-left: 6px solid #118DA9; }
 
 .chartdata {
-  background-color: #25314B; }
+  background-color: #25314B;
+  border-radius: 5px; }
 
 .chartdata__title {
   background-color: #1F2940;
-  padding: 20px; }
+  padding: 20px;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=base.css.map */
