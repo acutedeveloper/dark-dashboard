@@ -38,8 +38,8 @@ html {
   font-family: "Montserrat",Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 88.88889%;
-  -webkit-text-size-adjust: 88.88889%;
+  font-size: 16;
+  -webkit-text-size-adjust: 16;
   line-height: 1.5;
   color: #fff; }
 
@@ -89,31 +89,31 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal; }
 
 h1 {
-  font-size: 5rem;
+  font-size: 2.25rem;
   line-height: 1.2; }
 
 h2 {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   line-height: 1.2; }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.2; }
 
 h4 {
-  font-size: 1rem;
+  font-size: .875rem;
   line-height: 1.2; }
 
 h5 {
-  font-size: .8125rem;
+  font-size: .75rem;
   line-height: 1.2; }
 
 h6 {
-  font-size: .8125rem;
+  font-size: .75rem;
   line-height: 1.2; }
 
 p {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.2; }
 
@@ -148,7 +148,20 @@ body {
 
 .ticker-block__data-title {
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5);
+  font-size: .75rem; }
+
+.ticker-block__data-stat {
+  font-size: 1.5rem; }
+
+.ticker-block__data-change {
+  font-size: .75rem; }
+
+.ticker-block__data-change--gain {
+  color: #118DA9; }
+
+.ticker-block__data-change--loss {
+  color: #E3390D; }
 
 .ticker-block--inline {
   border-radius: 0; }

@@ -15,6 +15,23 @@
   &__data-title{
     text-transform: uppercase;
     color: rgba(255,255,255, 0.5);
+    font-size: $font-size-h5;
+  }
+
+  &__data-stat{
+    font-size: $font-size-h2;
+  }
+
+  &__data-change{
+
+    font-size: $font-size-h5;
+
+    &--gain{
+      color: $mediterranean-sea;
+    }
+    &--loss{
+      color: $vermilion;
+    }
   }
 
   &--inline{
