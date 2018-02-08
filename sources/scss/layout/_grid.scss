@@ -13,17 +13,36 @@ body{
 
 .top-row{
   display: flex;
-  justify-content: stretch;
-  align-items: stretch;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+  }
 }
 
 .bottom-row{
   display: flex;
+  flex-direction: column;
   width: calc(100% + #{$uniformed-margin});
   margin: 0 0 0 -#{$uniformed-margin/2};
+
+  @media screen and (min-width: 640px) {
+    flex-direction: row;
+    flex-flow: wrap;
+  }
 
   &__column{
     flex: 1 1 auto;
     margin: $uniformed-margin/2;
+
+    @media screen and (min-width: 640px) {
+      flex: 1 1 calc(50% - 20px);
+    }
+
+    @media screen and (min-width: 1024px) {
+      flex: 1 1 calc(25% - 20px);
+    }
+
   }
 }

@@ -5,7 +5,7 @@
  * @Author: NM Peters
  */
 
-.chartdata{
+.circularchart{
   background-color: $blue-lobelia;
   border-radius: $border-radius;
 
@@ -13,6 +13,18 @@
     background-color: #1F2940;
     padding: $uniformed-margin;
     border-radius: $border-radius;
+  }
+
+  &__graph{
+    background-color: $aquarium-diver;
+    height: 260px;
+    text-align: center;
+
+    h4, p {
+      position: relative;
+      top: 50%;
+      transform: perspective(1px) translateY(-50%);
+    }
   }
   
 }

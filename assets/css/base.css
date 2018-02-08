@@ -127,32 +127,62 @@ body {
 
 .top-row {
   display: flex;
-  justify-content: stretch;
-  align-items: stretch; }
+  flex-direction: column; }
+
+@media screen and (min-width: 768px) {
+  .top-row {
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch; } }
 
 .bottom-row {
   display: flex;
+  flex-direction: column;
   width: calc(100% + 20px);
   margin: 0 0 0 -10px; }
+
+@media screen and (min-width: 640px) {
+  .bottom-row {
+    flex-direction: row;
+    flex-flow: wrap; } }
 
 .bottom-row__column {
   flex: 1 1 auto;
   margin: 10px; }
+
+@media screen and (min-width: 640px) {
+  .bottom-row__column {
+    flex: 1 1 calc(50% - 20px); } }
+
+@media screen and (min-width: 1024px) {
+  .bottom-row__column {
+    flex: 1 1 calc(25% - 20px); } }
 
 .ticker-block {
   flex: 1;
   background-color: #25314B;
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: flex; }
 
 .ticker-block__data-title {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
-  font-size: .75rem; }
+  font-size: .75rem;
+  margin-bottom: 5px; }
 
 .ticker-block__data-stat {
   font-size: 1.5rem; }
+
+.ticker-block__data-stat--small {
+  font-size: 1.125rem; }
+
+.ticker-block__data-stat--gain {
+  color: #118DA9; }
+
+.ticker-block__data-stat--loss {
+  color: #E3390D; }
 
 .ticker-block__data-change {
   font-size: .75rem; }
@@ -163,14 +193,21 @@ body {
 .ticker-block__data-change--loss {
   color: #E3390D; }
 
+.ticker-block__line-chart {
+  height: 53px;
+  background-color: #E12E00;
+  flex: 1; }
+
 .ticker-block--inline {
-  border-radius: 0; }
+  border-radius: 5px; }
 
-.ticker-block--inline:first-child {
-  border-radius: 5px 0 0 5px; }
-
-.ticker-block--inline:last-child {
-  border-radius: 0 5px 5px 0; }
+@media screen and (min-width: 768px) {
+  .ticker-block--inline {
+    border-radius: 0; }
+  .ticker-block--inline:first-child {
+    border-radius: 5px 0 0 5px; }
+  .ticker-block--inline:last-child {
+    border-radius: 0 5px 5px 0; } }
 
 .ticker-block--red {
   border-left: 6px solid #E12E00; }
@@ -178,13 +215,23 @@ body {
 .ticker-block--blue {
   border-left: 6px solid #118DA9; }
 
-.chartdata {
+.circularchart {
   background-color: #25314B;
   border-radius: 5px; }
 
-.chartdata__title {
+.circularchart__title {
   background-color: #1F2940;
   padding: 20px;
   border-radius: 5px; }
+
+.circularchart__graph {
+  background-color: #1197B3;
+  height: 260px;
+  text-align: center; }
+
+.circularchart__graph h4, .circularchart__graph p {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%); }
 
 /*# sourceMappingURL=base.css.map */

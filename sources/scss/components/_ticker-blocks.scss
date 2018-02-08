@@ -11,15 +11,28 @@
   padding: $uniformed-margin;
   margin-bottom: $uniformed-margin;
   border-radius: $border-radius;
+  display: flex;
 
   &__data-title{
     text-transform: uppercase;
     color: rgba(255,255,255, 0.5);
     font-size: $font-size-h5;
+    margin-bottom: $uniformed-margin / 4;
   }
 
   &__data-stat{
     font-size: $font-size-h2;
+
+    &--small{
+      font-size: $font-size-h3;
+    }
+
+    &--gain{
+      color: $mediterranean-sea;
+    }
+    &--loss{
+      color: $vermilion;
+    }
   }
 
   &__data-change{
@@ -34,15 +47,27 @@
     }
   }
 
+  &__line-chart{
+    height: 53px;
+    background-color: $tomato-red;
+    flex: 1;
+  }
+
   &--inline{
-    border-radius: 0;
 
-    &:first-child{
-      border-radius: $border-radius 0 0 $border-radius;
-    }
+    border-radius: $border-radius;
 
-    &:last-child{
-      border-radius: 0 $border-radius $border-radius 0;
+    @media screen and (min-width: 768px){
+      border-radius: 0;
+
+      &:first-child{
+        border-radius: $border-radius 0 0 $border-radius;
+      }
+
+      &:last-child{
+        border-radius: 0 $border-radius $border-radius 0;
+      }
+
     }
   }
 
