@@ -70,8 +70,7 @@
 		<div class="circularchart">
 			<div class="circularchart__title">Expenses</div>
 			<div class="circularchart__graph">
-				<h4>£310,394,685</h4>
-				<p>Using 12 campaigns</p>
+
 			</div>
 		</div>
 	</div>
@@ -87,8 +86,7 @@
 		<div class="circularchart">
 			<div class="circularchart__title">Expenses</div>
 			<div class="circularchart__graph">
-				<h4>£310,394,685</h4>
-				<p>Using 12 campaigns</p>
+
 			</div>
 		</div>
 	</div>
@@ -104,8 +102,6 @@
 		<div class="circularchart">
 			<div class="circularchart__title">Expenses</div>
 			<div class="circularchart__graph">
-				<h4>£310,394,685</h4>
-				<p>Using 12 campaigns</p>
 			</div>
 		</div>
 	</div>
@@ -120,8 +116,8 @@
 		</div>
 		<div class="circularchart">
 			<div class="circularchart__title">Expenses</div>
-			<div class="circularchart_graph">
-			
+			<div class="circularchart__graph">
+
 			</div>
 		</div>
 	</div>
@@ -132,12 +128,38 @@
 <script src="assets/js/d3.v4.min.js"></script>
 <script>
 	// try and combine both jQuery and D3js
-	
-	var circleChartCanvas = d3.select(".circularchart_graph")
+	var circleChartData = {
+	    price: "£310,394,685",
+		campaigns: 12,
+		percentage: 50
+	}
+
+    width = parseInt(d3.select('.circularchart__graph').style('width'), 10);
+
+    var circleChartCanvas = d3.selectAll(".circularchart__graph")
 							.append("svg")
 							.attr("height", 250)
-							.attr("width", 250)
-							.attr("fill", "orange");
+							.attr("width", width)
+							.style("background", "orange");
+
+
+	circleChartCanvas.append("text")
+	    .text(circleChartData.price)
+		.attr('x', 20)
+		.attr('y', 20)
+	    .attr('class', 'size-h4')
+        .attr('fill', '#FFF');
+
+    circleChartCanvas.append("text")
+        .text("Using " + circleChartData.campaigns + " Campaigns")
+        .attr('x', 20)
+        .attr('y', 40)
+	    .attr('class', 'size-p')
+	    .attr('fill', '#FFF');
+
+    // circleChartCanvas.append("circle")
+	 //    .attr("");
+
 </script>
 </body>
 </html>

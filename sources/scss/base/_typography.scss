@@ -6,7 +6,7 @@
 
 // Perhaps create a mixin for font sizes and padding and margins
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, .size-h4{
 	font-family: $font-primary;
     font-weight: 700;
     font-style: normal;
@@ -23,11 +23,11 @@ h2 {
 }
 
 h3 {
-    font-size: $font-size-h3;
+    font-sxize: $font-size-h3;
     line-height: $line-height-h3;
 }
 
-h4 {
+h4, .size-h4 {
     font-size: $font-size-h4;
     line-height: $line-height-h4;
 }
@@ -42,7 +42,7 @@ h6 {
     line-height: $line-height-h6;
 }
 
-p {
+p, .size-p {
     font-size: $font-size-body;
     font-weight: 400;
     line-height: $line-height-body;
