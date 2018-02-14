@@ -120,9 +120,8 @@
 		</div>
 		<div class="circularchart">
 			<div class="circularchart__title">Expenses</div>
-			<div class="circularchart__graph">
-				<h4>£310,394,685</h4>
-				<p>Using 12 campaigns</p>
+			<div class="circularchart_graph">
+			
 			</div>
 		</div>
 	</div>
@@ -130,5 +129,15 @@
 </div>
 
 <script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/d3.v4.min.js"></script>
+<script>
+	// try and combine both jQuery and D3js
+	
+	var circleChartCanvas = d3.select(".circularchart_graph")
+							.append("svg")
+							.attr("height", 250)
+							.attr("width", 250)
+							.attr("fill", "orange");
+</script>
 </body>
 </html>
