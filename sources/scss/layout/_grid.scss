@@ -11,6 +11,12 @@ body{
   flex-direction: column;
 }
 
+.wrapper{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .top-row{
   display: flex;
   flex-direction: column;

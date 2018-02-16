@@ -125,6 +125,11 @@ body {
   display: flex;
   flex-direction: column; }
 
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; }
+
 .top-row {
   display: flex;
   flex-direction: column; }
@@ -225,7 +230,6 @@ body {
   border-radius: 5px; }
 
 .circularchart__graph {
-  background-color: #1197B3;
   height: 260px;
   text-align: center; }
 
