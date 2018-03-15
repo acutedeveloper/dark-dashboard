@@ -220,20 +220,20 @@ body {
 .ticker-block--blue {
   border-left: 6px solid #118DA9; }
 
-.circularchart {
+.circularchart, .areachart {
   background-color: #25314B;
   border-radius: 5px; }
 
-.circularchart__title {
+.circularchart__title, .areachart__title {
   background-color: #1F2940;
   padding: 20px;
   border-radius: 5px; }
 
-.circularchart__graph {
+.circularchart__graph, .areachart__graph {
   height: 260px;
   text-align: center; }
 
-.circularchart__graph h4, .circularchart__graph p {
+.circularchart__graph h4, .circularchart__graph p, .areachart__graph h4, .areachart__graph p {
   position: relative;
   top: 50%;
   transform: perspective(1px) translateY(-50%); }
