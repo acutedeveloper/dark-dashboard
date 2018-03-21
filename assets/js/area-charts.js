@@ -19,14 +19,21 @@ areaChartCanvas.append("text")
 
 // Lets create our scale
 var yScale = d3.scaleLinear()
-    .domain([d3.max(areaChartData, function(d){
+    .domain([0, d3.max(areaChartData, function(d){
         return d;
-    }), 0])
-    .range([0, height]);
+    })])
+    .range([height, 0]);
 
 var xScale = d3.scaleLinear()
-    .domain([0, areaChartData.length])
+    .domain([0, 5])
     .range([0, width]);
+
+// No axis is required
+
+// Map the data to the area chart
+var areaChart = d3.area()
+    .x(function(d,i) { return xScale(i); })
+    .y1(function(d) { return yScale(d); });
 
 // Think about a order for creating your charts
 // 1 Create the canvas
@@ -35,22 +42,12 @@ var xScale = d3.scaleLinear()
 // 3 Map the data to svg elements
 
 
-// First we need to create it
-var lineFunction = d3.line()
-    .x(function(d,i){ return xScale(i); })
-    .y(function(d,i){ return yScale(d); });
-
-var area = d3.area()
-    .defined(lineFunction.defined())
-    .x(function(d,i) { return xScale(i); })
-    .y1(function(d) { return yScale(d); })
-    .y0(yScale(0));
-
 // Second add the line to the charset
 // Because we have use the svg.line function to interpolate the data
 // We do no need to use the data() & enter() functions??
 areaChartCanvas.append("path")
-    .attr("d", area)
+    .data([areaChartData])
+    .attr("d", areaChart)
     .attr('stroke-width', 3)
     .attr("fill", "red")
     .attr("stroke", "#FFF");
