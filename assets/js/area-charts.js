@@ -6,26 +6,20 @@ height = 260;
 
 var areaChartCanvas = d3.selectAll(".areachart__graph")
     .append("svg")
+    .attr("class", "areachart__svg")
     .attr("height", height)
     .attr("width", width);
 
-areaChartCanvas.append("text")
-    .text("Using boobs Campaigns")
-    .attr('x', width/2)
-    .attr('y', height - 35)
-    .attr('text-anchor', 'middle')
-    .attr('class', 'size-p')
-    .attr('fill', '#FFF');
 
 // Lets create our scale
 var yScale = d3.scaleLinear()
-    .domain([0, d3.max(areaChartData, function(d){
+    .domain([0,d3.max(areaChartData, function(d){
         return d;
     })])
     .range([height, 0]);
 
 var xScale = d3.scaleLinear()
-    .domain([0, 5])
+    .domain([0, 4])
     .range([0, width]);
 
 // No axis is required
@@ -33,7 +27,8 @@ var xScale = d3.scaleLinear()
 // Map the data to the area chart
 var areaChart = d3.area()
     .x(function(d,i) { return xScale(i); })
-    .y1(function(d) { return yScale(d); });
+    .y1(function(d) { return yScale(d); })
+    .y0(height);
 
 // Think about a order for creating your charts
 // 1 Create the canvas
@@ -49,8 +44,12 @@ var areaChart = d3.area()
 areaChartCanvas.append("path")
     .data([areaChartData])
     .attr("d", areaChart)
-    .attr('stroke-width', 3)
-    .attr("fill", "red")
-    .attr("stroke", "#FFF");
-    
-    // force
+    .attr("fill", "red");
+
+areaChartCanvas.append("text")
+    .text("Using 13 Campaigns")
+    .attr('x', width/2)
+    .attr('y', height - 35)
+    .attr('text-anchor', 'middle')
+    .attr('class', 'size-p')
+    .attr('fill', '#FFF');
