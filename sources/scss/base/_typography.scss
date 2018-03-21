@@ -6,18 +6,18 @@
 
 // Perhaps create a mixin for font sizes and padding and margins
 
-h1, h2, h3, h4, h5, h6, .size-h4{
+h1, h2, h3, h4, h5, h6, .size-h4, .size-h2, .size-h1{
 	font-family: $font-primary;
     font-weight: 700;
     font-style: normal;
 }
 
-h1 {
+h1, .size-h1 {
     font-size: $font-size-h1;
     line-height: $line-height-h1;
 }
 
-h2 {
+h2, .size-h2 {
     font-size: $font-size-h2;
     line-height: $line-height-h2;
 }

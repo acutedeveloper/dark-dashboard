@@ -83,16 +83,16 @@ html {
 .aquarium-diver {
   background-color: #1197B3; }
 
-h1, h2, h3, h4, h5, h6, .size-h4 {
+h1, h2, h3, h4, h5, h6, .size-h4, .size-h2, .size-h1 {
   font-family: "Montserrat",Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal; }
 
-h1 {
-  font-size: 2.25rem;
+h1, .size-h1 {
+  font-size: 1.875rem;
   line-height: 1.2; }
 
-h2 {
+h2, .size-h2 {
   font-size: 1.5rem;
   line-height: 1.2; }
 
@@ -224,6 +224,9 @@ body {
   background-color: #25314B;
   border-radius: 5px; }
 
+.circularchart .size-h1, .areachart .size-h1 {
+  font-weight: 300; }
+
 .circularchart__title, .areachart__title {
   background-color: #1F2940;
   padding: 20px;
@@ -233,9 +236,13 @@ body {
   height: 260px;
   text-align: center; }
 
-.circularchart__graph h4, .circularchart__graph p, .areachart__graph h4, .areachart__graph p {
-  position: relative;
-  top: 50%;
-  transform: perspective(1px) translateY(-50%); }
+.circularchart__graph svg, .areachart__graph svg {
+  border-radius: 5px 5px 5px 5px; }
+
+.circularchart__fill--blue, .areachart__fill--blue {
+  fill: #1197B3; }
+
+.circularchart__fill--red, .areachart__fill--red {
+  fill: #E3390D; }
 
 /*# sourceMappingURL=base.css.map */

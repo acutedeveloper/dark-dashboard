@@ -9,6 +9,10 @@
   background-color: $blue-lobelia;
   border-radius: $border-radius;
 
+  .size-h1{
+    font-weight: 300;
+  }
+
   &__title{
     background-color: #1F2940;
     padding: $uniformed-margin;
@@ -19,11 +23,17 @@
     height: 260px;
     text-align: center;
 
-    h4, p {
-      position: relative;
-      top: 50%;
-      transform: perspective(1px) translateY(-50%);
+    svg{
+      border-radius: $border-radius $border-radius $border-radius $border-radius;
     }
   }
-  
+
+  &__fill{
+    &--blue{
+      fill: $aquarium-diver;
+    }
+    &--red{
+      fill: $vermilion;
+    }
+  }
 }
