@@ -51,3 +51,5 @@ areaChartCanvas.append("path")
     .attr('stroke-width', 3)
     .attr("fill", "red")
     .attr("stroke", "#FFF");
+    
+    // force
