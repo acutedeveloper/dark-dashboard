@@ -45,6 +45,7 @@ var areaChart = d3.area()
 // Second add the line to the charset
 // Because we have use the svg.line function to interpolate the data
 // We do no need to use the data() & enter() functions??
+
 areaChartCanvas.append("path")
     .data([areaChartData])
     .attr("d", areaChart)
