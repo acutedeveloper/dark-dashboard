@@ -48,8 +48,6 @@
   }
 
   &__line-chart{
-    height: 53px;
-    background-color: $tomato-red;
     flex: 1;
   }
 
@@ -78,5 +76,5 @@
   &--blue{
     border-left: 6px solid $mediterranean-sea;
   }
-  
+
 }

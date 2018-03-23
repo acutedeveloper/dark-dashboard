@@ -199,8 +199,6 @@ body {
   color: #E3390D; }
 
 .ticker-block__line-chart {
-  height: 53px;
-  background-color: #E12E00;
   flex: 1; }
 
 .ticker-block--inline {
