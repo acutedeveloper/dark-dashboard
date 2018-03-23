@@ -16,6 +16,7 @@ function drawAreaChart(color){
         .attr("class", "areachart__svg")
         .attr("height", height)
         .attr("width", width);
+        
 // Lets create our scale
     var yScale = d3.scaleLinear()
         .domain([0,d3.max(areaChartData, function(d){
