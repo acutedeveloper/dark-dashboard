@@ -200,7 +200,8 @@ body {
 
 .ticker-block__line-chart {
   height: 53px;
-  flex: 1; }
+  flex: 1;
+  margin-left: 10px; }
 
 .ticker-block--inline {
   border-radius: 5px; }
