@@ -4,6 +4,6 @@ The charts were created using D3JS and incorporate a debouncing to prevent multi
 when resized.
 
 ## Technologies Used
-SASS
-D3JS
-Gulp
+- SASS
+- D3JS
+- Gulp
